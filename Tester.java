@@ -31,7 +31,7 @@ public class Tester{
     System.out.println(twentyThreePointFour.divide(notZero));
     System.out.println(zero.divide(zero));
 
-    //Tests divide method
+    //Tests subtract method
     System.out.println(elevenPointOne.subtract(twentyThreePointFour));
     System.out.println(twentyThreePointFour.subtract(elevenPointOne));
 
@@ -58,5 +58,15 @@ public class Tester{
     System.out.println(threeFifth.reciprocal());
     System.out.println(invalid.reciprocal().getValue());
     System.out.println(threeFifth.reciprocal().getValue());
+
+    //Tests equals
+    RationalNumber sixTenth = new RationalNumber(6,10);
+    RationalNumber fiveThird = new RationalNumber(5,3);
+    System.out.println(sixTenth.equals(threeFifth));
+    System.out.println(threeFifth.equals(sixTenth));
+    System.out.println(fiveThird.equals(threeFifth));
+    System.out.println(threeFifth.equals(fiveThird));
+    System.out.println(threeFifth.equals(threeFifth));
+    System.out.println(threeFifth.equals(fiveThird.reciprocal()));
   }
 }
