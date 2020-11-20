@@ -44,5 +44,9 @@ public class Tester{
     System.out.println(threeFifth.getNumerator());
     System.out.println(threeFifth.getDenominator());
     System.out.println(threeFifth);
+
+    //Tests getValue
+    System.out.println(invalid.getValue());
+    System.out.println(threeFifth.getValue());
   }
 }
