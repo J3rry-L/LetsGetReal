@@ -19,8 +19,8 @@ public class RealNumber{
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
   public boolean equals(RealNumber other){
-    if (value == 0){
-      if (other.value == 0){
+    if (getValue() == 0){
+      if (other.getValue() == 0){
         return true;
       }
       else{
@@ -28,7 +28,7 @@ public class RealNumber{
       }
     }
     else{
-      return (Math.abs(value - other.value)/value < 0.00001);
+      return (Math.abs(getValue() - other.getValue())/getValue() < 0.00001);
     }
 
   }
@@ -40,7 +40,8 @@ public class RealNumber{
   public RealNumber add(RealNumber other){
      //other can be ANY RealNumber, including a RationalNumber
      //or other subclasses of RealNumber (that aren't written yet)
-     return null;
+     RealNumber result = new RealNumber(getValue() + other.getValue());
+     return result;
   }
 
   /*

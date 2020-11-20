@@ -11,5 +11,11 @@ public class Tester{
     RealNumber approxNum = new RealNumber(99999.0000001);
     System.out.println(num.equals(approxNum));
     System.out.println(approxNum.equals(num));
+
+    //Tests add method
+    RealNumber elevenPointOne = new RealNumber(11.1);
+    RealNumber twentyThreePointFour = new RealNumber(23.4);
+    System.out.println(elevenPointOne.add(twentyThreePointFour));
+    System.out.println(twentyThreePointFour.add(elevenPointOne));
   }
 }
