@@ -30,5 +30,9 @@ public class Tester{
     System.out.println(twentyThreePointFour.divide(zero));
     System.out.println(twentyThreePointFour.divide(notZero));
     System.out.println(zero.divide(zero));
+
+    //Tests divide method
+    System.out.println(elevenPointOne.subtract(twentyThreePointFour));
+    System.out.println(twentyThreePointFour.subtract(elevenPointOne));
   }
 }
