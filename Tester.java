@@ -34,5 +34,15 @@ public class Tester{
     //Tests divide method
     System.out.println(elevenPointOne.subtract(twentyThreePointFour));
     System.out.println(twentyThreePointFour.subtract(elevenPointOne));
+
+    //Tests RationalNumber constructor
+    RationalNumber invalid = new RationalNumber(20,0);
+    RationalNumber threeFifth = new RationalNumber(3,5);
+    System.out.println(invalid.getNumerator());
+    System.out.println(invalid.getDenominator());
+    System.out.println(invalid);
+    System.out.println(threeFifth.getNumerator());
+    System.out.println(threeFifth.getDenominator());
+    System.out.println(threeFifth);
   }
 }
