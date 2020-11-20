@@ -63,8 +63,16 @@ public class RationalNumber extends RealNumber {
   */
   private static int gcd(int a, int b){
     /*use euclids method or a better one*/
-    http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
-    return 0;
+    //http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
+    int rem;
+    int aPos = Math.max(Math.abs(a), Math.abs(b));
+    int bPos = Math.min(Math.abs(a), Math.abs(b));
+    while (bPos != 0){
+      rem = aPos % bPos;
+      aPos = bPos;
+      bPos = rem;
+    }
+    return aPos;
   }
 
   /**

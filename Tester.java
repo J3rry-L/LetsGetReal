@@ -45,11 +45,11 @@ public class Tester{
     System.out.println(threeFifth.getDenominator());
     System.out.println(threeFifth);
 
-    //Tests getValue
+    //Tests getValue method
     System.out.println(invalid.getValue());
     System.out.println(threeFifth.getValue());
 
-    //Tests reciprocal
+    //Tests reciprocal method
     System.out.println(invalid.reciprocal().getNumerator());
     System.out.println(invalid.reciprocal().getDenominator());
     System.out.println(invalid.reciprocal());
@@ -59,7 +59,7 @@ public class Tester{
     System.out.println(invalid.reciprocal().getValue());
     System.out.println(threeFifth.reciprocal().getValue());
 
-    //Tests equals
+    //Tests equals method
     RationalNumber sixTenth = new RationalNumber(6,10);
     RationalNumber fiveThird = new RationalNumber(5,3);
     System.out.println(sixTenth.equals(threeFifth));
@@ -68,5 +68,15 @@ public class Tester{
     System.out.println(threeFifth.equals(fiveThird));
     System.out.println(threeFifth.equals(threeFifth));
     System.out.println(threeFifth.equals(fiveThird.reciprocal()));
+
+    //Tests GCD method
+    /*
+    System.out.println(RationalNumber.gcd(-102,221));
+    System.out.println(RationalNumber.gcd(-102,-102));
+    System.out.println(RationalNumber.gcd(-37,-102));
+    System.out.println(RationalNumber.gcd(0,221));
+    System.out.println(RationalNumber.gcd(221,0));
+    System.out.println(RationalNumber.gcd(624129, 2061517));
+    */
   }
 }
