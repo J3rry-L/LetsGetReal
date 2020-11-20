@@ -80,5 +80,11 @@ public class Tester{
     */
 
     //Tests reduce method
+    RationalNumber posSixTenth = new RationalNumber(-6,-10);
+    RationalNumber negSixTenth = new RationalNumber(6,-10);
+    System.out.println(sixTenth);
+    System.out.println(zero);
+    System.out.println(posSixTenth);
+    System.out.println(negSixTenth);
   }
 }
