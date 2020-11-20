@@ -78,5 +78,7 @@ public class Tester{
     System.out.println(RationalNumber.gcd(221,0));
     System.out.println(RationalNumber.gcd(624129, 2061517));
     */
+
+    //Tests reduce method
   }
 }

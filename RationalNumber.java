@@ -15,6 +15,7 @@ public class RationalNumber extends RealNumber {
     else{
       numerator = nume;
       denominator = deno;
+      reduce();
     }
   }
 
@@ -81,7 +82,16 @@ public class RationalNumber extends RealNumber {
   *reduced after construction.
   */
   private void reduce(){
-
+    int tempNume = numerator;
+    int tempDeno = denominator;
+    if (tempNume * tempDeno >= 0){
+      numerator = Math.abs(tempNume / gcd(tempNume, tempDeno));
+      denominator = Math.abs(tempDeno / gcd(tempNume, tempDeno));
+    }
+    else{
+      numerator = -1 * Math.abs(tempNume / gcd(tempNume, tempDeno));
+      denominator = Math.abs(tempDeno / gcd(tempNume, tempDeno));
+    }
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**
