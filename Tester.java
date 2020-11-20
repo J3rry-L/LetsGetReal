@@ -23,5 +23,12 @@ public class Tester{
     System.out.println(twentyThreePointFour.multiply(elevenPointOne));
     System.out.println(twentyThreePointFour.multiply(zero));
     System.out.println(twentyThreePointFour.multiply(notZero));
+
+    //Tests divide method
+    System.out.println(elevenPointOne.divide(twentyThreePointFour));
+    System.out.println(twentyThreePointFour.divide(elevenPointOne));
+    System.out.println(twentyThreePointFour.divide(zero));
+    System.out.println(twentyThreePointFour.divide(notZero));
+    System.out.println(zero.divide(zero));
   }
 }
