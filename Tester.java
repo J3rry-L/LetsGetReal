@@ -17,5 +17,11 @@ public class Tester{
     RealNumber twentyThreePointFour = new RealNumber(23.4);
     System.out.println(elevenPointOne.add(twentyThreePointFour));
     System.out.println(twentyThreePointFour.add(elevenPointOne));
+
+    //Tests multiply method
+    System.out.println(elevenPointOne.multiply(twentyThreePointFour));
+    System.out.println(twentyThreePointFour.multiply(elevenPointOne));
+    System.out.println(twentyThreePointFour.multiply(zero));
+    System.out.println(twentyThreePointFour.multiply(notZero));
   }
 }
