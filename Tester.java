@@ -48,5 +48,15 @@ public class Tester{
     //Tests getValue
     System.out.println(invalid.getValue());
     System.out.println(threeFifth.getValue());
+
+    //Tests reciprocal
+    System.out.println(invalid.reciprocal().getNumerator());
+    System.out.println(invalid.reciprocal().getDenominator());
+    System.out.println(invalid.reciprocal());
+    System.out.println(threeFifth.reciprocal().getNumerator());
+    System.out.println(threeFifth.reciprocal().getDenominator());
+    System.out.println(threeFifth.reciprocal());
+    System.out.println(invalid.reciprocal().getValue());
+    System.out.println(threeFifth.reciprocal().getValue());
   }
 }
