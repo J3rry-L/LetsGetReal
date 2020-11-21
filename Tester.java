@@ -98,5 +98,11 @@ public class Tester{
     System.out.println(sixTenth.divide(negSixTenth));
     System.out.println(sixTenth.divide(fiveThird));
     System.out.println(threeFifth.divide(invalid));
+
+    //Tests divide method
+    System.out.println(sixTenth.add(sixTenth));
+    System.out.println(sixTenth.add(negSixTenth));
+    System.out.println(sixTenth.add(fiveThird));
+    System.out.println(threeFifth.add(invalid));
   }
 }
