@@ -99,10 +99,16 @@ public class Tester{
     System.out.println(sixTenth.divide(fiveThird));
     System.out.println(threeFifth.divide(invalid));
 
-    //Tests divide method
+    //Tests add method
     System.out.println(sixTenth.add(sixTenth));
     System.out.println(sixTenth.add(negSixTenth));
     System.out.println(sixTenth.add(fiveThird));
     System.out.println(threeFifth.add(invalid));
+
+    //Tests subtract method
+    System.out.println(sixTenth.subtract(sixTenth));
+    System.out.println(sixTenth.subtract(negSixTenth));
+    System.out.println(sixTenth.subtract(fiveThird));
+    System.out.println(threeFifth.subtract(invalid));
   }
 }
