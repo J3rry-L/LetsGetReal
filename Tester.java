@@ -86,5 +86,10 @@ public class Tester{
     System.out.println(zero);
     System.out.println(posSixTenth);
     System.out.println(negSixTenth);
+
+    //Tests multiply method
+    System.out.println(sixTenth.multiply(sixTenth));
+    System.out.println(sixTenth.multiply(negSixTenth));
+    System.out.println(sixTenth.multiply(fiveThird));
   }
 }
