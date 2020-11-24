@@ -110,6 +110,15 @@ public class Tester{
     System.out.println(sixTenth.subtract(negSixTenth));
     System.out.println(sixTenth.subtract(fiveThird));
     System.out.println(threeFifth.subtract(invalid));
+
+    //Tests compareTo method
+    System.out.println(sixTenth.compareTo(threeFifth));
+    System.out.println(sixTenth.compareTo(zero));
+    System.out.println(sixTenth.compareTo(fiveThird));
+    System.out.println(notZero.compareTo(zero));
+    System.out.println(zero.compareTo(notZero));
+    System.out.println(num.compareTo(approxNum));
+    System.out.println(approxNum.compareTo(num));
   }
 }
 
@@ -134,7 +143,7 @@ NaN
 12.299999999999999
 0
 1
-0/1
+0
 3
 5
 3/5
@@ -142,7 +151,7 @@ NaN
 0.6
 0
 1
-0/1
+0
 5
 3
 5/3
@@ -160,18 +169,25 @@ true
 -3/5
 9/25
 -9/25
-1/1
-0/1
-1/1
--1/1
+1
+0
+1
+-1
 9/25
-0/1
+0
 6/5
-0/1
+0
 34/15
 3/5
-0/1
+0
 6/5
 -16/15
 3/5
+0
+1
+-1
+1
+-1
+0
+-1
 */
