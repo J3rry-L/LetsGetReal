@@ -128,6 +128,16 @@ public class Tester{
     System.out.println(pointSix.equals(sixTenth));
     System.out.println(sixTenth.equals(zero));
     System.out.println(pointSix.equals(num));
+
+    //Tests special cases of numerator = 0 or denominator = 1
+    RationalNumber zeroOverNum = new RationalNumber(0,10);
+    RationalNumber numOverZero = new RationalNumber(10,0);
+    RationalNumber twoOverOne = new RationalNumber(2,1);
+    RationalNumber fourOverNegTwo = new RationalNumber(4,-2);
+    System.out.println(zeroOverNum);
+    System.out.println(numOverZero);
+    System.out.println(twoOverOne);
+    System.out.println(fourOverNegTwo);
   }
 }
 
