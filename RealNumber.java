@@ -1,4 +1,4 @@
-public class RealNumber{
+public class RealNumber extends Number{
   private double value;
 
   public RealNumber(double v){
@@ -17,7 +17,7 @@ public class RealNumber{
   /*
   *Return true when the values are within 0.001% of each other.
   *Special case: if one is exactly zero, the other must be exactly zero.
-  */
+
   public boolean equals(RealNumber other){
     if (getValue() == 0){
       if (other.getValue() == 0){
@@ -33,7 +33,6 @@ public class RealNumber{
 
   }
 
-  /*
   *Return a new RealNumber that has the value of:
   *the sum of this and the other
   */
