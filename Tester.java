@@ -119,6 +119,15 @@ public class Tester{
     System.out.println(zero.compareTo(notZero));
     System.out.println(num.compareTo(approxNum));
     System.out.println(approxNum.compareTo(num));
+    System.out.println(sixTenth.compareTo(approxNum));
+    System.out.println(zero.compareTo(approxNum));
+
+    //Tests equals method (abstract class Number)
+    RealNumber pointSix = new RealNumber(0.6);
+    System.out.println(sixTenth.equals(pointSix));
+    System.out.println(pointSix.equals(sixTenth));
+    System.out.println(sixTenth.equals(zero));
+    System.out.println(pointSix.equals(num));
   }
 }
 
@@ -190,4 +199,10 @@ true
 -1
 0
 -1
+-1
+-1
+true
+true
+false
+false
 */
